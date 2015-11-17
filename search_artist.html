@@ -9,22 +9,23 @@
 ​
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="search_artist.js"></script>
+    <link rel="stylesheet" type="text/css" href="search_artist.css">
   </head>
   <body>
 ​	<div class="container-fluid">
 		<div class="col-sm-4">
-		   
+		   <form class="js-search">
+				<label for="js-search-input">Artist Name:</label><br>
+				<input type="text" class="js-search-input"><br>
+				<button type="submit">Search</button>
+			</form>	
 		</div>
 
 		<div class="col-sm-8">
-			
-			<form class="js-search">
-				<label for="">Name</label>
-				<input>
-				
-
-				<button type="submit"></button>
-			</form>	
+			<div class="js-search-wrapper">
+				<h1>Artists:</h1>
+				<ul></ul>
+			</div>
 		</div>
 	</div>
   </body>
